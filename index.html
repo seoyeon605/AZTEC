@@ -12,7 +12,7 @@
             align-items: center;
             height: 100vh;
             margin: 0;
-            background-color: #ffffff;
+            background-color: #f4f4f9;
         }
         .week {
             background-color: #ffffff;
@@ -21,6 +21,10 @@
             border-radius: 15px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             text-align: center;
+            transition: transform 0.3s ease; /* 위젯에 마우스를 올리면 살짝 확대되는 애니메이션 */
+        }
+        .week:hover {
+            transform: scale(1.05); /* 위젯 확대 효과 */
         }
         .numbers {
             font-size: 80px;
@@ -31,6 +35,14 @@
         .label {
             font-size: 20px;
             color: #555555;
+        }
+        @media (max-width: 768px) {
+            .numbers {
+                font-size: 60px; /* 작은 화면에서는 텍스트 크기를 줄입니다 */
+            }
+            .label {
+                font-size: 18px;
+            }
         }
     </style>
 </head>
