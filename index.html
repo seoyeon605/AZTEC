@@ -17,7 +17,7 @@
         .week {
             background-color: #ffffff;
             border: 2px solid #e0e0e0;
-            padding: 40px;
+            padding: 20px 80px; /* 좌우로 더 길게, 세로로 짧게 */
             border-radius: 15px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             text-align: center;
@@ -32,16 +32,9 @@
             color: #1F78B4;
             margin-bottom: 10px;
         }
-        .label {
-            font-size: 20px;
-            color: #555555;
-        }
         @media (max-width: 768px) {
             .numbers {
                 font-size: 60px; /* 작은 화면에서는 텍스트 크기를 줄입니다 */
-            }
-            .label {
-                font-size: 18px;
             }
         }
     </style>
@@ -49,7 +42,6 @@
 <body>
     <div class="week"> 
         <div id="week" class="numbers"></div>
-        <div class="label">AZTEC</div>
     </div> 
     <script>
         // 기준 날짜 설정 (예: 2024년 1월 1일)
